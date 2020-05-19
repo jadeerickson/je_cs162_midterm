@@ -1,0 +1,159 @@
+.booking {
+    background: #535252;
+    border-radius: .4em;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    display: inline-block;
+    position: absolute;
+  
+    
+   
+    touch-action: manipulation
+}
+
+
+.booking * {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;  
+    font-size: 1.5vw;
+}
+
+
+
+.booking .book-flat {
+    position: relative;
+}
+
+
+
+.booking.book-hidden {
+    display: none;
+}
+
+/*
+.booking.book-view-days, .book-view-months, .book-view-years{
+    position:absolute;
+    top: 0% !important;
+    left: 0%  !important;
+   
+}
+*/
+
+
+
+.booking .book-instance {
+    display: inline-block;
+   height: 13.8em;
+ 
+    padding: .5em;
+    text-align: center;
+ width: 15em;
+    
+    
+}
+
+.booking .book-instance .book-button {
+    color: #eee;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none
+}
+
+.booking .book-instance .book-today {
+    background: #ad4460;  /* #17384d */
+    color: #f3bac1         /* #88c5eb */
+}
+
+.booking .book-instance .book-button:hover {
+    background: transparent;
+    color: #f3bac1 ;
+}
+
+.booking .book-instance .book-not-in-month {
+    color:   #666 ;
+}
+
+.book .book-instance .book-disabled,
+.booking .book-instance .book-disabled:hover {
+    color: rgb(88, 88, 88);
+    cursor: default
+}
+
+.booking .book-instance .book-selected {
+    background:  #d3305c; /* #136a9f */
+    color: #eee
+}
+
+.booking .book-instance .book-not-in-month.book-selected {
+    background: #b94766;
+}
+
+.booking .book-instance nav {
+    color: #eee;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    line-height: 2em
+}
+
+.booking .book-instance nav *:first-child:hover {
+    color: #f3bac1 ;
+}
+
+.booking .book-instance nav .book-prev,
+.booking .book-instance nav .book-next {
+    display: none;
+    height: 2em;
+    width: 1em
+}
+
+.booking .book-instance nav .book-month {
+    width: 14em
+}
+
+.booking .book-instance .book-years *,
+.booking .book-instance .book-months * {
+    display: inline-block;
+    line-height: 3.6em;
+    width: 3.5em
+}
+
+.booking .book-instance .book-day-of-week {
+    color: #999;
+    cursor: default
+}
+
+.booking .book-instance .book-day-of-week *,
+.booking .book-instance .book-days * {
+    display: inline-block;
+    line-height: 1.5em;
+    width: 2em
+}
+
+.booking .book-instance .book-day-of-week * {
+    line-height: 1.8em
+}
+
+.booking .book-instance:first-child .book-prev,
+.booking .book-instance:last-child .book-next {
+    display: block
+}
+
+.booking .book-instance:first-child .book-month,
+.booking .book-instance:last-child .book-month {
+    width: 13em
+}
+
+.booking .book-instance:first-child:last-child .book-month {
+    width: 12em
+}
+
+
+
+.booking:not(.book-view-days) .book-days,
+.booking:not(.book-view-days) .book-day-of-week,
+.booking:not(.book-view-months) .book-months,
+.booking:not(.book-view-years) .book-years {
+    display: none
+        
+}
